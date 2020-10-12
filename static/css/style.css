@@ -1,0 +1,198 @@
+
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 100%;
+  /* height: %; */
+}
+form{
+   text-align: center;
+  
+   margin: 24px 0px 0px 0px;     
+}
+.are001 {
+   text-align: center;
+font-size: 23px;
+color: #F0514D;
+margin: 11px 8px 13px 6px auto;
+margin-top: 27px;
+margin-bottom: 25px;
+font-weight: bold;
+font-family: 'Lobster', cursive;
+}
+.menu_01
+{
+margin: 50px 0px 0px 0px;
+    text-align: center;
+    background-color: #855986a1;
+    width: 100%;
+    height: 200px;
+    border-style: hidden;
+    border-radius: 98px;
+    border-color: blanchedalmond;
+    box-shadow: inset 0 0 18px 8px #4a1212c7;
+}
+section.menu_010 {
+   width: 100%;
+   height: 834px;
+   background-size: cover;
+   background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+}
+
+.button_main
+{
+   margin: 0px;
+   width: 50px;
+}
+.card{
+      box-shadow: 10px -7px 11px 7px #754b4bc7;
+   }
+.card_des{
+   background-color: #fef4f8;
+   padding: 30px;
+   height: 240px;
+   margin-bottom: 30px;
+   -webkit-transition: all 0.5s;
+   transition: all 0.5s;
+
+}
+.card_des:hover{
+   -webkit-transform: translateY(-5px);
+   transform: translateY(-6px);
+}
+
+/* text area for the email */
+.shadow-textarea textarea.form-control::placeholder {
+   font-weight: 300;
+}
+.shadow-textarea textarea.form-control {
+   padding-left: 0.8rem;
+}
+.e-mail_area{
+   width: 300px;
+   height: 150px;
+ }
+ .box_button{
+   width: 191px;
+   font-stretch: semi-expanded;
+   font-weight: bold;
+   margin-top: 60px;
+   box-shadow: 0 0 45px -3px #4a1212c7;
+ }
+
+section p.content_img {
+   color: #ffffff;
+   float: right;
+   margin-top: 247px;
+   font-size: 33px;
+   font-style: oblique;
+   font-weight: 900;
+   margin-right: 108px;
+}
+
+span.content_img_02 {
+   float: right;
+   /* text-align: end; */
+   color: #ffffff;
+   margin-right: -550px;
+   margin-top: 292px;
+   font-size: 33px;
+   font-style: oblique;
+   font-weight: 900;
+}
+
+.card.img_des_01 {
+   background-color: #2d2828a8;
+   width: 24rem;
+   height: 175px;
+   text-align: center;
+   font-size: 18px;
+   color: #f2fbf8;
+   border-left: 5px solid #fd1c1c;
+   box-shadow: -9px -7px 9px 5px #162b09;
+   border-right: 5px solid red;
+}
+.card.img_des_01:hover {
+   background-color: #f10b0bcc;
+   border-color: brown;
+} 
+
+p {
+   font-size: 15px;
+   margin-bottom: 15px;
+}
+
+/* //apporach */
+.approach-content h2 {
+   margin-bottom: 20px;
+   font-size: 40px;
+}
+.approach-content ul li {
+   padding-right: 100px;
+   padding-left: 30px;
+}
+
+.approach-content ul li {
+   list-style: none;
+   background-color: #ffffff;
+   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+   padding: 30px;
+   position: relative;
+   padding-left: 100px;
+   margin-bottom: 30px;
+   -webkit-transition: all 0.5s;
+   transition: all 0.5s;
+}
+.approach-content ul li i {
+   position: absolute;
+   top: 30px;
+   left: 30px;
+   font-size: 30px;
+   width: 50px;
+   height: 50px;
+   line-height: 50px;
+   background-color: #efefef;
+   text-align: center;
+   border-radius: 50%;
+   color: #d80650;
+   -webkit-transition: all 0.5s;
+   transition: all 0.5s;
+}
+.approach-content ul li:hover {
+   -webkit-transform: translateY(-5px);
+   transform: translateY(-5px);
+}
+.approach-content ul li:hover i {
+   background-color: #d80650;
+   color: #ffffff;
+}
+h3.head_approach {
+   margin: 2px 0px 12px 0px;
+}
+.approach-content h2 {
+   margin-bottom: 20px;
+   font-size: 40px;
+}
+
+/* 
+
+
+email sms comment page css 
+
+*/
+
+
+.e-mail_01{
+   text-align: center;
+   color: #9e3333;
+   font-size: 20px;
+   font-stretch: extra-expanded
+}
+/* ///result */
+.hre{
+   text-align: center;
+    font-size: 28px;
+    font-family: system-ui;
+    font-optical-sizing: initial;
+    color: #060506;
+}

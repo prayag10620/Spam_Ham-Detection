@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- //for the icon of the image -->
+  <!--<link rel = "icon" href = "../static/img/homepage.png" type = "image/x-icon">-->
+  <link href="{{ url_for('static', filename='img/homepage.png') }}" rel="icon">
+  <title>Home</title>
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="position: fixed;
+        overflow: hidden;
+     z-index: 1; 
+    color: #fff;
+    transition-delay: inherit;
+    width: 100%;
+     background-color: #232221c4; ">
+
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <p class="text_dn" style="color: #FFF;">SpamDetectorLite</p>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto" style="    float: right; font-weight: 900;">
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <p class="text_dn" style="color: #FFF;">Home</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">
+              <p class="text_dn" style="color: #FFF;"> About</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">
+              <p class="text_dn" style="color: #FFF;">Contact</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- navbar end -->
+
+
+  <section class="menu_010" style="width: 100%; height: 700px; background-size: cover;
+background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+">
+
+    <p class="content_img">
+      ProjectX spam Detection </p>
+    <span class="content_img_02">by the four college friends ...</span>
+
+    <div class="container">
+      <div class="row" style="margin-top: 450px;">
+        <div class="col-sm-4">
+          <div class="card img_des_01">
+            <div class="card-body">
+              <h5 class="card-title"><b>Cyber Security</b></h5>
+              <p class="card-text">
+                Cybersecurity is the practice designed to protect systems, networks, programs and data from digital
+                attacks.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card img_des_01">
+            <div class="card-body">
+              <h5 class="card-title"><b>Spam</b></h5>
+              <p class="card-text">
+                Spam refers to unsolicited bulk messages being sent through email, instant messaging or other digital
+                communication tools.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card img_des_01">
+            <div class="card-body">
+              <h5 class="card-title"><b>Content based filter</b></h5>
+              <p class="card-text">
+                This technique recognizes words or patterns of input which are defined either
+                legitimate or spam. valid content listed in a whitelist while spam listed in blacklist.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  {% block body %} {% endblock %}
+
+
+
+  <footer class="page-footer font-small indigo " style="color: #ffffffeb;
+    background-color: #0a0000;
+    margin-top: -15px;">
+
+    <!-- Footer Links -->
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">About us</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Models</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Help</a>
+          </h6>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="/contact">Contact</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row-->
+      <hr class="rgba-white-light" style="margin: 0 15%;">
+      <!-- Grid row-->
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+        <!-- Grid column -->
+        <div class="col-md-8 col-12 mt-5">
+          <p style="line-height: 1.7rem">The Client based Spam Detector allows you to detect Email, SMS and youtube
+            comments
+            data, as in todays tech oriented world cyber frauds are at boom so this is a small contribution to alert you
+            if by chance
+            you are catch in this field. so, the data which you are not confident at, please verify it here.
+          </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row-->
+      <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+      <!-- Grid row-->
+      <div class="row pb-3">
+        <!-- Grid column -->
+        <div class="col-md-12">
+          <div class="mb-5 flex-center">
+            <!-- Facebook -->
+            <ul class="list-inline" style="
+                   text-align: center;
+                   margin-bottom: -35px;">
+              <li><a href="#"> <img src="../static/img/github.png"></a></li>
+              <li><a href="#"> <img src="../static/img/gmail.png"></a></li>
+              <li><a href="#"> <img src="../static/img/linkedin.png"></a></li>
+              <li><a href="#"> <img src="../static/img/youtube.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2020 Copyright
+      <a href="/about">ProjectTeam</a>
+    </div>
+  </footer>
+</body>
+
+</html>
