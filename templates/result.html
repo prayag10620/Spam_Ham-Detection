@@ -80,7 +80,7 @@
 		</div>
 	</header>
 
-	<p style="color:blue;font-size:20;text-align: center;"><b>Results for your commit</b></p>
+	<p style="color:blue;font-size:20;text-align: center;   line-height: 3;"><b>Results for your commit</b></p>
 	
 	<div class="results">
      
@@ -90,12 +90,15 @@
 	 font-size: 25px;
 	 margin: 8px 0px 29px 0px;">SPAM</h2>
      {% elif prediction == 0%}
-     <h2 style="color: blue; text-align: center; font-size: 25px;">NOT SPAM(It's a Ham)</h2>
+     <h2 style="    color: #2bf712; text-align: center; font-size: 25px;">NOT SPAM(It's a Ham)</h2>
      {% endif %}
-
-
+     <!-- <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="frontend\static\img\giphy.gif"></iframe>
+    </div> -->
+    <img class="spam_ham" src="../static/img/giphy.gif" alt="this slowpoke moves" />
 	</div>
-
+  <img class="spam_ham" src="../static/img/giphy 2.gif" alt="this slowpoke moves" />
+</div>
 
 </body>
 </html>

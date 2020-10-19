@@ -59,7 +59,15 @@ section.menu_010 {
    -webkit-transform: translateY(-5px);
    transform: translateY(-6px);
 }
-
+.ty_t {font-size: 33px;
+    margin: 2px 5px 0px 13px;
+    color: #e2490e;
+    border: #549c9c;
+    }
+    h5.card-title.cont_t {
+      font-size: 20px;
+      margin: 5px 0px 3px 26px;
+  }
 /* text area for the email */
 .shadow-textarea textarea.form-control::placeholder {
    font-weight: 300;
@@ -86,34 +94,53 @@ section p.content_img {
    font-size: 33px;
    font-style: oblique;
    font-weight: 900;
-   margin-right: 108px;
+   margin-right: 143px;
 }
 
 span.content_img_02 {
    float: right;
    /* text-align: end; */
    color: #ffffff;
-   margin-right: -550px;
+   margin-right: -517px;
    margin-top: 292px;
    font-size: 33px;
    font-style: oblique;
    font-weight: 900;
 }
+/* . card_des{
+   font-family: "Krona One script=all rev=1";
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+} */
 
 .card.img_des_01 {
    background-color: #2d2828a8;
-   width: 24rem;
-   height: 175px;
+   width: 31rem;
+   height: 183px;
    text-align: center;
-   font-size: 18px;
+   font-size: 16px;
    color: #f2fbf8;
    border-left: 5px solid #fd1c1c;
    box-shadow: -9px -7px 9px 5px #162b09;
    border-right: 5px solid red;
+   color: #FFF;
+   border: 2px solid rgb(216, 2, 134);
+   border-radius: 0px;
+   /* padding: 18px 36px; */
+   display: inline-block;
+   font-family: "Lucida Console", Monaco, monospace;
+   cursor: pointer;
+   box-shadow: inset 0 0 0 0 #c7310f;
+   -webkit-transition: ease-out 0.4s;
+   -moz-transition: ease-out 0.4s;
+   transition: ease-out 0.4s;
 }
 .card.img_des_01:hover {
-   background-color: #f10b0bcc;
+   
    border-color: brown;
+   box-shadow: inset 400px 50px 0 0 #D80286;
 } 
 
 p {
@@ -195,4 +222,41 @@ email sms comment page css
     font-family: system-ui;
     font-optical-sizing: initial;
     color: #060506;
+    margin-top: 162px;
+}
+
+b.font__head {
+   font-size: 16px;
+   color: #fff;
+   font-style: oblique;
+   font-variant: unset;
+}
+
+
+
+p.body_text.card-text {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #f7f7f7f7;
+}
+
+text.card_con_tent {
+   font-size: 16.4px;
+   font-stretch: semi-expanded;
+   font-family: -webkit-pictograph;
+   font-variant: simplified;
+   font-weight: 500;
+   color: black;
+}
+
+
+a.btn.btn-primary.btn_card {
+   text-align: start;
+   margin: 31px 0px 0px 0px;
+   border: 1px solid;
+}
+img.spam_ham {
+   margin: 15px 0px 2px 425px;
+   width: 423px;
 }

@@ -7,7 +7,7 @@
 
   <!-- Custom styles for this template -->
   <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
-  
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/favicon.ico" />
@@ -41,7 +41,10 @@
 
     <div class="container">
       <a class="navbar-brand" href="/">
-        <p class="text_dn" style="color: #FFF;">SpamDetectorLite</p>
+        <p class="text_dn" style="color: #FFF;
+        font-size: 18px;
+        font-stretch: extra-expanded;
+        font-weight: 900;">SpamDetectorLite</p>
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -87,8 +90,8 @@ background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dc
         <div class="col-sm-4">
           <div class="card img_des_01">
             <div class="card-body">
-              <h5 class="card-title"><b>Cyber Security</b></h5>
-              <p class="card-text">
+              <h5 class="card-title"><b class="font__head">Cyber Security</b></h5>
+              <p class="card-text body_text">
                 Cybersecurity is the practice designed to protect systems, networks, programs and data from digital
                 attacks.
               </p>
@@ -98,8 +101,8 @@ background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dc
         <div class="col-sm-4">
           <div class="card img_des_01">
             <div class="card-body">
-              <h5 class="card-title"><b>Spam</b></h5>
-              <p class="card-text">
+              <h5 class="card-title"><b class="font__head">Spam</b></h5>
+              <p class="card-text body_text">
                 Spam refers to unsolicited bulk messages being sent through email, instant messaging or other digital
                 communication tools.
               </p>
@@ -110,8 +113,8 @@ background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dc
         <div class="col-sm-4">
           <div class="card img_des_01">
             <div class="card-body">
-              <h5 class="card-title"><b>Content based filter</b></h5>
-              <p class="card-text">
+              <h5 class="card-title"><b class="font__head">Content based filter</b></h5>
+              <p class="card-text body_text">
                 This technique recognizes words or patterns of input which are defined either
                 legitimate or spam. valid content listed in a whitelist while spam listed in blacklist.
               </p>
@@ -201,6 +204,6 @@ background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dc
       <a href="/about">ProjectTeam</a>
     </div>
   </footer>
-</body>
 
+</body>
 </html>

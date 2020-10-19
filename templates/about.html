@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- //for the icon of the image -->
+  <!--<link rel = "icon" href = "../static/img/homepage.png" type = "image/x-icon">-->
+  <link href="{{ url_for('static', filename='img/homepage.png') }}" rel="icon">
+  <title>Home</title>
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="position: fixed;
+        overflow: hidden;
+     z-index: 1; 
+    color: #fff;
+    transition-delay: inherit;
+    width: 100%;
+     background-color: #232221c4; ">
+
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <p class="text_dn" style="color: #FFF;
+        font-size: 18px;
+        font-stretch: extra-expanded;
+        font-weight: 900;">SpamDetectorLite</p>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto" style="    float: right; font-weight: 900;">
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <p class="text_dn" style="color: #FFF;">Home</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">
+              <p class="text_dn" style="color: #FFF;"> About</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">
+              <p class="text_dn" style="color: #FFF;">Contact</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="cotainer-fluid">
+    <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.4s">
+        <div class="col-12 col-md-10 col-xs-10 offset-xs-1">
+            <div class="client_slides owl-carousel">
+
+                <!-- Single Testimonial -->
+                <div class="single-testimonial text-center">
+                    <!-- Testimonial Image -->
+                    <div class="testimonial_image">
+                        <img src="img/test-img/1.jpg" alt="">
+                    </div>
+                    <!-- Testimonial Feedback Text -->
+                    <div class="testimonial-description">
+                        <div class="testimonial_text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis magni, quisquam, accusantium dolores atque, doloribus odit minus maiores sunt mollitia consequatur, soluta quasi.</p>
+                        </div>
+
+                        <!-- Admin Text -->
+                        <div class="admin_text">
+                            <h5>Sunny Khan</h5>
+                            <p>Head of Design, Company CEO</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Testimonial -->
+                <div class="single-testimonial text-center">
+                    <!-- Testimonial Image -->
+                    <div class="testimonial_image">
+                        <img src="img/test-img/2.jpg" alt="">
+                    </div>
+                    <!-- Testimonial Feedback Text  -->
+                    <div class="testimonial-description">
+                        <div class="testimonial_text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nostrum adipisci porro quisquam. Rem, earum, tenetur? Architecto et, earum repudiandae.</p>
+                        </div>
+
+                        <!-- Admin Text -->
+                        <div class="admin_text">
+                            <h5>Ajoy Das</h5>
+                            <p>Head of Idea, Company CEO</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Testimonial -->
+                <div class="single-testimonial text-center">
+                    <!-- Testimonial Image -->
+                    <div class="testimonial_image">
+                        <img src="img/test-img/3.jpg" alt="">
+                    </div>
+                    <!-- Testimonial Feedback Text  -->
+                    <div class="testimonial-description">
+                        <div class="testimonial_text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et delectus, nam repudiandae repellat id placeat molestias consequuntur, laudantium dolorem nesciunt sit.</p>
+                        </div>
+                        <!-- Admin Text -->
+                        <div class="admin_text">
+                            <h5>Jebin Khan</h5>
+                            <p>Head of Marketing, Company CEO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="firsr_01">
+    <div class="container">
+        <div class="row">
+            
+        </div>
+    </div>
+</section>
