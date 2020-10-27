@@ -72,19 +72,38 @@
   <!-- navbar end -->
 
 
-	<header>
-		<div class="container">
-		 <div id='brand'>
-			<h1 class="hre">Spam Detection using NLP</h1>
-		  </div>
-		</div>
-	</header>
+  <header>
+    <div class="container">
+      <div id='brand'>
+        <h1 class="hre">Spam Detection using NLP</h1>
+      </div>
+    </div>
+  </header>
 
-	<p style="color:blue;font-size:20;text-align: center;   line-height: 3;"><b>Results for your commit</b></p>
-	
-	<div class="results">
-     
-     {% if prediction == 1%}
+  <p style="color:blue;font-size:20;text-align: center;   line-height: 3;"><b>Results for your commit</b></p>
+
+  <div class="results">
+    {% if prediction == 1 %}
+    <h1 style="text-align: center;margin: -40px 0px 0px 0px;">Prediction: <span class='danger'>Gotcha! This is a SPAM
+        content.</span></h1>
+    <div class="container my-3">
+      <h2>Probability for Spam and Ham in your content</h2>
+      <h3><b style="color: red;">Spam: </b> {{ Spam }}%</h3>
+      <h3><b style="color: blue;">Ham: </b> {{ Ham }}%</h3>
+    </div>
+    <img class="spam" src="../static/img/giphy.gif" alt="Spam" />
+    {% elif prediction == 0 %}
+    <h1 style="text-align: center;margin: -40px 0px 0px 0px;">Prediction: <span class='safe'>Great! This is NOT a spam
+        content.</span></h1>
+    <div class="container my-3">
+      <h2>Probability for Spam and Ham in your content</h2>
+      <h3><b style="color: green;">Spam: </b> {{ Spam }}%</h3>
+      <h3><b style="color: blue;">Ham: </b> {{ Ham }}%</h3>
+    </div>
+    <img class="spam_ham" src="../static/img/giphy 2.gif" alt="Ham" />
+    {% endif %}
+    <!-- 
+    {% if prediction == 1%}
      <h2 style="    color: red;
 	 text-align: center;
 	 font-size: 25px;
@@ -92,13 +111,19 @@
      {% elif prediction == 0%}
      <h2 style="    color: #2bf712; text-align: center; font-size: 25px;">NOT SPAM(It's a Ham)</h2>
      {% endif %}
-     <!-- <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="frontend\static\img\giphy.gif"></iframe>
-    </div> -->
-    <img class="spam_ham" src="../static/img/giphy.gif" alt="this slowpoke moves" />
-	</div>
-  <img class="spam_ham" src="../static/img/giphy 2.gif" alt="this slowpoke moves" />
-</div>
+  -->
+  </div>
+
+
+
+  <!-- 
+  <div >
+    <p class='footer-description'>Made with ❤️ <a href="/about">ProjectTeam</a></p>   
+  </div>s
+ -->
+
+
 
 </body>
+
 </html>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Contact</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="icon" type="image/png" href="../static/images/icons/favicon.ico"/>
+
+	<link rel="icon" type="image/png" href="../static/images/icons/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../static/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
@@ -17,15 +18,62 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/util.css">
 </head>
-<body>
 
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="position: fixed;
+     overflow: hidden; z-index: 1; color: #fff; transition-delay: inherit; width: 100%;
+     background-color: #232221c4; ">
+
+		<div class="container">
+			<a class="navbar-brand" href="/">
+				<p class="text_dn" style="color: #FFF;
+  font-size: 18px;
+  font-stretch: extra-expanded;
+  font-weight: 900;">SpamDetectorLite</p>
+			</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+				aria-label="Toggle navigation">
+
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto" style="    float: right; font-weight: 900;">
+					<li class="nav-item">
+						<a class="nav-link" href="/">
+							<p class="text_dn" style="color: #FFF;">Home</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/about">
+							<p class="text_dn" style="color: #FFF;"> About</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/contact">
+							<p class="text_dn" style="color: #FFF;">Contact</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- navbar end -->
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<p></p>
-			<form class="contact100-form validate-form">
+			{% if success %}
+			<div class="alert alert-success" role="alert">
+				Your message has been sent sucessfully!
+			  </div>
+			{% endif %}
+			<form class="contact100-form validate-form" method='post'>
 				<span class="contact100-form-title">
-					Want to get in touch? Fill out the form below to send us a message and we will get back to you as soon as possible!
+					Want to get in touch? Fill out the form below to send us a message and we will get back to you as
+					soon as possible!
 				</span>
 
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
@@ -35,21 +83,21 @@
 					</label>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+				<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
 					<input class="input100" id="email" type="text" name="email" placeholder="Email">
 					<label class="label-input100" for="email">
 						<span class="lnr lnr-envelope"></span>
 					</label>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Phone is required">
+				<div class="wrap-input100 validate-input" data-validate="Phone is required">
 					<input class="input100" id="phone" type="text" name="phone" placeholder="Phone">
 					<label class="label-input100" for="phone">
 						<span class="lnr lnr-phone-handset"></span>
 					</label>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+				<div class="wrap-input100 validate-input" data-validate="Message is required">
 					<textarea class="input100" name="message" placeholder="Your message..."></textarea>
 				</div>
 
@@ -59,7 +107,7 @@
 						Send copy to my-email
 					</label>
 				</div>
-
+				
 				<div class="container-contact100-form-btn">
 					<div class="wrap-contact100-form-btn">
 						<div class="contact100-form-bgbtn"></div>
@@ -68,6 +116,7 @@
 						</button>
 					</div>
 				</div>
+			
 			</form>
 		</div>
 	</div>
@@ -76,32 +125,35 @@
 
 	<div id="dropDownSelect1"></div>
 
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="vendor/daterangepicker/moment.min.js"></script>
 	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="contact_files/js/main.js"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+		//$('.toast').toast('show');
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-  gtag('config', 'UA-23581568-13');
-</script>
+		gtag('config', 'UA-23581568-13');
+		
+	</script>
 
 </body>
+
 </html>
