@@ -96,9 +96,9 @@ def predictcomment():
         sequence = pad_sequences(sequence, maxlen=SEQUENCE_LENGTH)
         # get the prediction
         prediction = yclf.predict(sequence)[0]
-        pred = yclf.predict_proba(prediction) * 100
-        ham = round(pred[0][0],2)
-        spam = round(pred[0][1],2)
+        pred = yclf.predict(sequence)[0] * 100
+        ham = round(pred[0],2)
+        spam = round(pred[1],2) 
         # one-hot encoded vector, revert using np.argmax
         y_prediction = np.argmax(prediction)
     return render_template('result.html', prediction = y_prediction, Ham = ham, Spam = spam)
