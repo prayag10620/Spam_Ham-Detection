@@ -27,7 +27,7 @@ sms_clf = pickle.load(open(smsfile,'rb'))
 smscv = pickle.load(open('smsvec.pkl','rb'))
 
 #ycomment file
-yclf = tf.keras.models.load_model('nn_9388.h5')
+yclf = tf.keras.models.load_model('rnn9422.h5')
 ycv = pickle.load(open('nntok.pkl','rb'))
 
 app = Flask(__name__)
