@@ -17,10 +17,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
+
+
   <!-- //for the icon of the image -->
   <!--<link rel = "icon" href = "../static/img/homepage.png" type = "image/x-icon">-->
   <link href="{{ url_for('static', filename='img/homepage.png') }}" rel="icon">
@@ -75,79 +77,296 @@
   </nav>
 
 
-  <div class="cotainer-fluid">
-    <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.4s">
-        <div class="col-12 col-md-10 col-xs-10 offset-xs-1">
-            <div class="client_slides owl-carousel">
 
-                <!-- Single Testimonial -->
-                <div class="single-testimonial text-center">
-                    <!-- Testimonial Image -->
-                    <div class="testimonial_image">
-                        <img src="img/test-img/1.jpg" alt="">
-                    </div>
-                    <!-- Testimonial Feedback Text -->
-                    <div class="testimonial-description">
-                        <div class="testimonial_text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis magni, quisquam, accusantium dolores atque, doloribus odit minus maiores sunt mollitia consequatur, soluta quasi.</p>
-                        </div>
 
-                        <!-- Admin Text -->
-                        <div class="admin_text">
-                            <h5>Sunny Khan</h5>
-                            <p>Head of Design, Company CEO</p>
-                        </div>
-                    </div>
-                </div>
+  <style>
+    .profile-card-3 {
+      font-family: 'Open Sans', Arial, sans-serif;
+      position: relative;
+      float: left;
+      overflow: hidden;
+      width: 100%;
+      text-align: center;
+      height: 245px;
+      border: none;
+    }
 
-                <!-- Single Testimonial -->
-                <div class="single-testimonial text-center">
-                    <!-- Testimonial Image -->
-                    <div class="testimonial_image">
-                        <img src="img/test-img/2.jpg" alt="">
-                    </div>
-                    <!-- Testimonial Feedback Text  -->
-                    <div class="testimonial-description">
-                        <div class="testimonial_text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nostrum adipisci porro quisquam. Rem, earum, tenetur? Architecto et, earum repudiandae.</p>
-                        </div>
+    .profile-card-3 .background-block {
+      float: left;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
 
-                        <!-- Admin Text -->
-                        <div class="admin_text">
-                            <h5>Ajoy Das</h5>
-                            <p>Head of Idea, Company CEO</p>
-                        </div>
-                    </div>
-                </div>
+    .profile-card-3 .background-block .background {
+      width: 100%;
+      vertical-align: top;
+      opacity: 0.9;
+      -webkit-filter: blur(0.5px);
+      filter: blur(0.5px);
+      -webkit-transform: scale(1.8);
+      transform: scale(2.8);
+    }
 
-                <!-- Single Testimonial -->
-                <div class="single-testimonial text-center">
-                    <!-- Testimonial Image -->
-                    <div class="testimonial_image">
-                        <img src="img/test-img/3.jpg" alt="">
-                    </div>
-                    <!-- Testimonial Feedback Text  -->
-                    <div class="testimonial-description">
-                        <div class="testimonial_text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et delectus, nam repudiandae repellat id placeat molestias consequuntur, laudantium dolorem nesciunt sit.</p>
-                        </div>
-                        <!-- Admin Text -->
-                        <div class="admin_text">
-                            <h5>Jebin Khan</h5>
-                            <p>Head of Marketing, Company CEO</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    .profile-card-3 .card-content {
+      width: 100%;
+      padding: 15px 25px;
+      color: #232323;
+      float: left;
+      background: #efefef;
+      height: 50%;
+      border-radius: 0 0 5px 5px;
+      position: relative;
+      z-index: 9999;
+    }
+
+    .profile-card-3 .card-content::before {
+      content: '';
+      background: #efefef;
+      width: 120%;
+      height: 100%;
+      left: 11px;
+      bottom: 51px;
+      position: absolute;
+      z-index: -1;
+      transform: rotate(-13deg);
+    }
+
+    .profile-card-3 .profile {
+      border-radius: 50%;
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      max-width: 100px;
+      opacity: 1;
+      box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+      border: 2px solid rgba(255, 255, 255, 1);
+      -webkit-transform: translate(-50%, 0%);
+      transform: translate(-50%, 0%);
+      z-index: 99999;
+    }
+
+    .profile-card-3 h2 {
+      margin: 0 0 5px;
+      font-weight: 600;
+      font-size: 25px;
+    }
+
+    .profile-card-3 h2 small {
+      display: block;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
+    .profile-card-3 i {
+      display: inline-block;
+      font-size: 16px;
+      color: #232323;
+      text-align: center;
+      border: 1px solid #232323;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 50%;
+      margin: 0 5px;
+    }
+
+    .profile-card-3 .icon-block {
+      float: left;
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    .profile-card-3 .icon-block a {
+      text-decoration: none;
+    }
+
+    .profile-card-3 i:hover {
+      background-color: #232323;
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+
+  </head>
+
+  <body>
+
+    <section class="about__01">
+
+      <div class="row">
+
+        <div class="container">
+          <div class="col-sm-6">
+            <p style="font-weight: 700;
+                   font-size: 20px;
+                   line-height: 35px;
+                   margin-top: 51px;
+                   margin-bottom: 27px;
+                   text-transform: uppercase;">
+              About the Topic and reason behind taking the project.
+            </p>
+            <h2 style="font-weight: 500;
+                   line-height: 24px;
+                   font-size: 18px;
+                   font-style: normal;
+                   font-family: emoji;
+                   font-stretch: semi-expanded;">
+              <q><b><em>Client based Anti Spam Detection</em></b></q> is a topic which is choosen because The businesss
+              are growing online at very huge rate where there comunication is done by the means of email, sms as well
+              feedback or comments
+              And this is area where online fraud and phishing customer takes place through various means in which spam
+              content through email sms are biggest thing so, to avoid phising and spam content in communication and get
+              customer confidence on recieved sms or email from different sources we have taken a particular project.
+            </h2>
+            <!--
+                   to find, understand
+                   and develop an real world application about how Machine is capable to understand, process and respond in human language.
+                   -->
+
+          </div>
+          <div class="col-sm-6">
+
+            <h3 style="    text-align: center;
+            color: #08bb1b;
+            font-optical-sizing: revert;
+            font-size: 33px;
+            font-variant: small-caps;
+            margin: 52px 0px 0px 0px;
+            font-family: ui-monospace;
+            text-decoration: underline;
+            text-decoration-color: #5978e8;
+            text-decoration-style: wavy;
+            word-spacing: 5px;"> Our Goal </h3>
+
+            <p style="margin: 58px -15px 0px 56px;
+            font-size: 17px;
+            word-spacing: 2px;
+            word-spacing: 4px;
+            font-style: italic;
+            font-family: 'Open Sans Condensed', sans-serif;">
+              The main objective of Project is to develop a Text classification Model through various avialable machine
+              learning and NLP techniques.
+              The primary focus of the indigenously developed text classification model is to automatically analyze and
+              categorize content in email, sms and comment is SPAM/HAM which will in turn help many service provider
+              company.
+              With the increase in email and sms manually checking and classifying the content is impossible task. the
+              model is very much usefull.
+            </p>
+          </div>
         </div>
-    </div>
-</div>
-</section>
-
-<section class="firsr_01">
-    <div class="container">
+      </div>
+    </section>
+    <section class="about__02">
+      <div class="container">
         <div class="row">
-            
-        </div>
-    </div>
-</section>
+
+          <div class="col-sm-12">
+            <h3 style="
+
+               text-align :center;
+               font-size: 32px;
+               font-weight: 700;
+               text-transform: uppercase;
+               margin-bottom: 34px;
+               margin-top: 33px;
+               padding-bottom: 0;
+               color: #5f687b;
+               position: relative;
+               z-index: 2;">
+              <!--Our professional team -->
+              Meet Our Team
+            </h3>
+          </div>
+
+
+          <section>
+            <div class="col-md-3">
+              <div class="card profile-card-3">
+                <div class="background-block">
+                  <img
+                    src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                    alt="profile-sample1" class="background" />
+                </div>
+                <div class="profile-thumb-block">
+                  <img src="{{ url_for('static', filename='img/raghav.jpg') }}" alt="profile-image" class="profile" />
+                </div>
+                <div class="card-content">
+                  <h2>Raghav</h3>
+                    <div class="icon-block">
+                      <a href="https://github.com/Raghavagr/" target="_blank"> <i class="fa fa-github"></i></a>
+                      <a href="https://www.linkedin.com/in/raghav-agrawal-4b5393184/" target="_blank"> <i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-3">
+              <div class="card profile-card-3">
+                <div class="background-block">
+                  <img
+                    src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                    alt="profile-sample1" class="background" />
+                </div>
+                <div class="profile-thumb-block">
+                  <img src=" {{ url_for('static', filename='img/sambhav.jpg') }}" alt="profile-image" class="profile" />
+                </div>
+                <div class="card-content">
+                  <h2>Sambhav</h3>
+                    <div class="icon-block">
+                      <a href="https://github.com/sambhavjain536" target="_blank"> <i class="fa fa-github"></i></a>
+                      <a href="https://www.linkedin.com/in/sambhav-jain-024376199/" target="_blank"> <i
+                          class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card profile-card-3">
+                <div class="background-block">
+                  <img
+                    src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                    alt="profile-sample1" class="background" />
+                </div>
+                <div class="profile-thumb-block">
+                  <img src="{{ url_for('static', filename='img/prayag.jpg') }}" alt="profile-image" class="profile" />
+                </div>
+                <div class="card-content">
+                  <h2>Prayag</h3>
+                    <div class="icon-block">
+                      <a href="https://github.com/prayag10620" target="_blank"> <i class="fa fa-github"></i></a>
+                      <a href="https://www.linkedin.com/in/prayag-gavshinde-9689a4196" target="_blank"> <i
+                          class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-3">
+              <div class="card profile-card-3">
+                <div class="background-block">
+                  <img
+                    src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                    alt="profile-sample1" class="background" />
+                </div>
+                <div class="profile-thumb-block">
+                  <img src="{{ url_for('static', filename='img/rishi.jpg') }}" alt="profile-image" class="profile" />
+                </div>
+                <div class="card-content">
+                  <h2>Rishi</h3>
+                    <div class="icon-block">
+                      <a href="https://github.com/R95-del" target="_blank"> <i class="fa fa-github"></i></a>
+                      <a href="https://www.linkedin.com/in/rishi-somani-b49344188" target="_blank"> <i
+                          class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+
+          </section>
+
+  </body>
+
+</html>
