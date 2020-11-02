@@ -6,12 +6,12 @@ Created on Thu Sep 24 13:20:11 2020
 """
 import numpy as np
 from flask import Flask, render_template, request
-from flask_mail import Mail, Message
+#from flask_mail import Mail, Message
 #from sklearn.feature_extraction.text import CountVectorizer
 import tensorflow as tf
 from keras.preprocessing.sequence import pad_sequences
 import pickle
-from config import mail_username, mail_password
+#from config import mail_username, mail_password
 
 SEQUENCE_LENGTH = 100 # the length of all sequences (number of words per sample)
 EMBEDDING_SIZE = 100
@@ -33,13 +33,13 @@ ycv = pickle.load(open('nntok.pkl','rb'))
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = "MySecureSecretKey"
-app.config['MAIL_SERVER'] = "smtp-mail.outlook.com"
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USE_SSL'] = False
-app.config['MAIL_USERNAME'] = mail_username
-app.config['MAIL_PASSWORD'] = mail_password
-mail = Mail(app)
+#app.config['MAIL_SERVER'] = "smtp-mail.outlook.com"
+#app.config['MAIL_PORT'] = 587
+#app.config['MAIL_USE_TLS'] = True
+#app.config['MAIL_USE_SSL'] = False
+#app.config['MAIL_USERNAME'] = mail_username
+#app.config['MAIL_PASSWORD'] = mail_password
+#mail = Mail(app)
 
 @app.route("/")
 def home():
@@ -98,7 +98,7 @@ def predictcomment():
         prediction = yclf.predict(sequence)[0]
         pred = yclf.predict(sequence)[0] * 100
         ham = round(pred[0],2)
-        spam = round(pred[1],2) 
+        spam = round(pred[1],2)
         # one-hot encoded vector, revert using np.argmax
         y_prediction = np.argmax(prediction)
     return render_template('result.html', prediction = y_prediction, Ham = ham, Spam = spam)
