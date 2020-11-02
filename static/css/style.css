@@ -90,11 +90,11 @@ section.menu_010 {
 section p.content_img {
    color: #ffffff;
    float: right;
-   margin-top: 247px;
+   margin-top: 210px;
    font-size: 33px;
    font-style: oblique;
    font-weight: 900;
-   margin-right: 143px;
+   margin-right: 55px;
 }
 
 span.content_img_02 {
@@ -102,7 +102,7 @@ span.content_img_02 {
    /* text-align: end; */
    color: #ffffff;
    margin-right: -517px;
-   margin-top: 292px;
+   margin-top: 265px;
    font-size: 33px;
    font-style: oblique;
    font-weight: 900;
@@ -223,6 +223,8 @@ email sms comment page css
     font-optical-sizing: initial;
     color: #060506;
     margin-top: 162px;
+    text-decoration-style: revert;
+    text-shadow: 0px -5px 5px #351e30;
 }
 
 b.font__head {
@@ -235,10 +237,13 @@ b.font__head {
 
 
 p.body_text.card-text {
-    font-size: 15px;
-    font-style: italic;
-    font-weight: lighter;
-    color: #f7f7f7f7;
+   font-size: 16px;
+   font-style: italic;
+   line-height: revert;
+   font-weight: lighter;
+   color: #f7f7f7f7;
+   margin-top: 18px;
+   font-family: 'Rajdhani', sans-serif;
 }
 
 text.card_con_tent {
@@ -253,10 +258,51 @@ text.card_con_tent {
 
 a.btn.btn-primary.btn_card {
    text-align: start;
-   margin: 31px 0px 0px 0px;
+   margin: 11px 0px 0px 0px;
    border: 1px solid;
 }
 img.spam_ham {
-   margin: 15px 0px 2px 425px;
-   width: 423px;
+   margin: -186px 0px 2px 465px;
+   width: 420px;
+   height: 305px;
 }
+
+img.spam {
+   margin: -178px 0px 2px 565px;
+   width: 410px;
+   height: 245px;
+}
+
+/* Result */
+.results{
+   padding: 30px 0 0;
+  flex: 1 0 auto;
+}
+
+.danger{
+   color: #ff0000;
+}
+
+.safe{
+   color: green;
+}
+
+.gif{
+  width: 30%;
+}
+
+section.about__01 {
+   margin: 76px 0px 0px 0px;
+   background-color: aliceblue;
+}
+section.about__02 {
+   background-color: aliceblue;
+}
+
+p.spam_4501 {
+   font-size: 27px;
+   margin: 2px 0px 0px 16px;
+}
+/* .result_back{
+   background-color: aliceblue;
+} */
