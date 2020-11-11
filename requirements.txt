@@ -10,7 +10,6 @@ ipython-genutils==0.2.0
 ipywidgets==7.5.1
 itsdangerous==1.1.0
 Jinja2==2.11.2
-Keras==2.4.3
 Keras-Preprocessing==1.1.2
 lazy-object-proxy==1.4.3
 MarkupSafe==1.1.1
