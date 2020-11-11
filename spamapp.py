@@ -8,7 +8,7 @@ import numpy as np
 from flask import Flask, render_template, request
 #from flask_mail import Mail, Message
 #from sklearn.feature_extraction.text import CountVectorizer
-import tensorflow as tf
+
 from keras.preprocessing.sequence import pad_sequences
 import pickle
 #from config import mail_username, mail_password
